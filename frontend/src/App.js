@@ -3,6 +3,9 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import axios from 'axios';
 
+// Set default base URL for axios
+axios.defaults.baseURL = 'http://localhost:5001';
+
 function App() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(true);
